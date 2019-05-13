@@ -8,7 +8,7 @@ div,p, button, span, a{
 	box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6{
-	margin: 0px;
+	margin: 0;
 	font-weight: 800;
 	text-transform: uppercase;
 }
@@ -79,7 +79,6 @@ section{
 	text-align: center;
 	display: block;
 	text-decoration: none;
-	text-align: center;
 	text-transform: uppercase;
 	transition: all 0.15s ease;
 }
