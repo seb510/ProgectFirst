@@ -1,18 +1,23 @@
+*{
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	font-size: 13px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Sans Caption', 'Open Sans', sans-serif;
 }
 
-div,p, button, span, a{
-	box-sizing: border-box;
-}
 
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	font-weight: 800;
 	text-transform: uppercase;
+}
+
+a{
+	transition: 0.2s ease-out;
 }
 
 h1{
@@ -31,13 +36,17 @@ section{
 	padding-top: 118px;
 }
 
+img{
+    display: inline-block;
+}
+
 .container{
 	width: 930px;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 auto;
 }
 
-.header{
+.back{
 	background: url('../img/background.jpg') no-repeat center top;
 	padding-top: 45px;
 	padding-bottom: 250px;
@@ -60,18 +69,13 @@ section{
 }
 
 .unit{
-	width: 340px;
-	background: url('../img/icon1.jpg') no-repeat left top;
-	padding-left: 86px;
-	padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.unit:nth-child(2){
-	background: url('../img/icon2.jpg') no-repeat left top;
-}
-
-.unit:nth-child(3){
-	background: url('../img/icon3.jpg') no-repeat left top;
+.text {
+    margin-left: 25px;
 }
 
 .unit h3{
@@ -90,7 +94,7 @@ section{
 	color: black;
 	font-weight: 800;
 	width: 236px;
-	padding: 17px 0px;
+	padding: 17px 0;
 	text-align: center;
 	display: block;
 	text-decoration: none;
@@ -106,7 +110,7 @@ section{
 	background: black;
 	font-size:  13px;
 	margin-top: 116px;
-	padding: 55px 0px;
+	padding: 55px 0;
 }
 
 .foterit{
@@ -130,100 +134,46 @@ section{
 /*---- Adaptive_Media ----*/
 /*при максимальной ширини и мении будет работать запрос*/
 
-@media (max-width: 1160px) {
+@media (max-width: 960px) {
 
     .container{     /*реальная шырына ==with 100% + border=0 + padding 15+15*/
-        width: 95%;
+        width: 100%;
         padding: 0 10px;
         text-align: center;
     }
 
-    .main{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    .back{
+		padding-bottom: 50px;
     }
 
-    .menu {
+    .merits {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .menu__item{
-        padding: 0;
-        margin: 0;
-        font-size: 35px;
+    .photos{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 10px;
     }
 
-    .text {
+	.btn{
+		display: flex;
+		justify-content: center;
+		font-weight: 800;
+		width: 35%;
+		padding: 17px 0;
+	}
+
+
+	.text {
         margin: 10px;
         text-align: center;
         font-size: 15px;
         padding: 10px 0;
     }
-
-    .text__big {
-        font-size: 35px;
-    }
-
-    .button{
-        margin: 45px 0;
-        width: 135px;
-        padding: 10px 10px;
-        background-color: transparent;
-        outline: none;
-        color: white;
-        font-size: 15px;
-        text-transform: capitalize;
-        border: solid 1px white;
-    }
-
-    .develop {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .develop__main{
-        text-align: center;
-        font-size: 25px;
-        padding: 20px 0;
-    }
-
-    .develop__main span {
-        font-weight: bold;
-        font-size: 35px;
-    }
-
-    .develop__text{
-        text-align: center;
-        padding: 30px;
-        font-size: 12px;
-        margin: 10px 0;
-        width: 75%;
-    }
-
-    .develop__info{
-        padding: 12px;
-        font-size: 16px;
-        margin: 0;
-    }
-
-    .develop__img,
-    .develop__img.sec {
-        width: 165px;
-        height: 130px;
-        margin: 0;
-    }
-
-    .client__user {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 0 40px 0;
-    }
-
 
 
 
