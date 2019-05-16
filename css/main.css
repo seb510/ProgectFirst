@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 a{
-	transition: 0.2s ease-out;
+	transition: 0.4s ease-out;
 }
 
 h1{
@@ -99,7 +99,7 @@ img{
 	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: all 0.15s ease;
+	transition: all 0.4s ease;
 }
 
 .btn:hover{
@@ -126,8 +126,16 @@ img{
 	color: white;
 	transition: all 0.5s ease;
 }
-.social__text a:hover{
-	color: gray;
+.way:hover{
+	color: green;
+}
+
+.face:hover{
+	color: blue;
+}
+
+.you:hover{
+	color: red;
 }
 
 
@@ -145,6 +153,19 @@ img{
     .back{
 		padding-bottom: 50px;
     }
+	.offer{
+		padding: 0;
+		margin: 120px;
+	}
+
+	.offer__main{
+		font-size: 30px;
+		color: #fbdfaa;
+	}
+
+	.offer__text{
+		color: #ecd2a3;
+	}
 
     .merits {
         display: flex;
@@ -161,8 +182,8 @@ img{
 	}
 
 	.unit p {
-		text-align-last: left;
-		padding: 10px 0;
+		padding: 10px;
+		text-align: justify;
 	}
 
 	.unit{
@@ -189,8 +210,7 @@ img{
 
 	.btn{
 		display: inline-block;
-		width: 45%;
-		padding: 17px 0;
+		width: 35%;
 	}
 
 	.social{
